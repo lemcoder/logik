@@ -1,9 +1,15 @@
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0-blue.svg?style=flat&logo=kotlin)](https://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.24-blue.svg?style=flat&logo=kotlin)](https://kotlinlang.org)
 
 ## Logik
 
-to run `gradlew runDebugExecutableMingwX64`
+Simple program for evaluating mathematical logic expressions and checking for tautology.
+Currently available for:
+* mingwx64 (Windows)
 
+To run download the program from releases page and run with:
+```
+logik.exe "<your_logic_expression>" 
+```
 
 ## License
 
