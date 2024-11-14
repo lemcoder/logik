@@ -30,6 +30,9 @@ fun main(args: Array<String>) {
     val variables = variableCollector.visit(parseTree)
 
     val isTautologyResult = isTautology(parseTree, variables)
-
-    println("$isTautologyResult\n")
+    if (isTautologyResult) {
+        println("Expression\n\n    $expression\n\nis a tautology\n")
+    } else {
+        println("Expression\n\n    $expression\n\nis NOT a tautology\n")
+    }
 }
