@@ -10,6 +10,16 @@ To run download the program from releases page and run with:
 ```
 logik.exe "<your_logic_expression>" 
 ```
+Allowed symbols are:
+```
+'!'     Negation
+'&&'    Conjunction
+'||'    Disjunction
+'->'    Implication
+'<->'   Bi-conditional
+'(' ')' Parentheses
+p,q...  Variables
+```
 
 ## License
 
