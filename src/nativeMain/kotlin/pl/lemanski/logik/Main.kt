@@ -9,11 +9,11 @@ fun main(args: Array<String>) {
         println(
             """
             type in the logic expression. Allowed symbols are:
+            '!'     Negation
+            '&&'    Conjunction
+            '||'    Disjunction
             '->'    Implication
             '<->'   Bi-conditional
-            '||'    Disjunction
-            '&&'    Conjunction
-            '!'     Negation
             '(' ')' Parentheses
             p,q...  Variables
         """.trimIndent()
