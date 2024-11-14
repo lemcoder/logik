@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.0.21"
+kotlin = "1.9.24" # Move to 2.0 when v1.10 is released
 antlr-kotlin = "1.0.0"
 
 [libraries]

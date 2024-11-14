@@ -20,7 +20,7 @@ kotlin {
     mingwX64().apply {
         binaries {
             executable {
-                entryPoint = "main"
+                entryPoint = "pl.lemanski.logik.main"
             }
         }
     }
@@ -48,7 +48,7 @@ val generateKotlinGrammarSource = tasks.register<AntlrKotlinTask>("generateKotli
     }
 
     // We want the generated source files to have this package name
-    val pkgName = "pl.lemanski.logik.antlr.generated"
+    val pkgName = "pl.lemanski.logik.antlr"
     packageName = pkgName
 
     arguments = listOf("-visitor")
