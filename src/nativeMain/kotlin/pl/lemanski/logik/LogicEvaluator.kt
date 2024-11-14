@@ -14,7 +14,7 @@ class LogicEvaluator(private val variableValues: Map<String, Boolean>) : LogicBa
             ctx.NOT() != null                            -> !visit(ctx.expr(0)!!)
             ctx.VAR() != null                            -> variableValues[ctx.VAR()!!.text]!!     // Get the variable's value from the map
             ctx.LPAREN() != null && ctx.RPAREN() != null -> visit(ctx.expr(0)!!) // Evaluate inside parentheses
-            else                                         -> false
+            else                                         -> throw IllegalStateException("Invalid expression")
         }
     }
 

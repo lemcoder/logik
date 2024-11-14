@@ -29,10 +29,20 @@ fun main(args: Array<String>) {
     val variableCollector = VariableCollector()
     val variables = variableCollector.visit(parseTree)
 
-    val isTautologyResult = isTautology(parseTree, variables)
+    val (isTautologyResult, counterexamples) = try {
+        isTautology(parseTree, variables)
+    } catch (ex: Exception) {
+        println(ex.message)
+        return
+    }
+
     if (isTautologyResult) {
         println("Expression\n\n    $expression\n\nis a tautology\n")
     } else {
         println("Expression\n\n    $expression\n\nis NOT a tautology\n")
+        println("Counterexamples:\n")
+        counterexamples.forEach { assignment ->
+            println(assignment.map { (varName, value) -> "$varName=$value" }.joinToString(", "))
+        }
     }
 }
