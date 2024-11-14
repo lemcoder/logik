@@ -25,6 +25,7 @@ kotlin {
         }
     }
 
+    applyDefaultHierarchyTemplate()
     sourceSets {
         nativeMain {
             kotlin {

@@ -2,6 +2,7 @@
 
 ## Logik
 
+to run `gradlew runDebugExecutableMingwX64`
 
 
 ## License
