@@ -4,7 +4,8 @@
 
 Simple program for evaluating mathematical logic expressions and checking for tautology.
 Currently available for:
-* mingwx64 (Windows)
+* mingwX64 (Windows)
+* linuxX64
 
 To run download the program from releases page and run with:
 ```

@@ -17,10 +17,15 @@ repositories {
 }
 
 kotlin {
-    mingwX64().apply {
-        binaries {
-            executable {
-                entryPoint = "pl.lemanski.logik.main"
+    listOf(
+        mingwX64(),
+        linuxX64()
+    ).forEach {
+        it.apply {
+            binaries {
+                executable {
+                    entryPoint = "pl.lemanski.logik.main"
+                }
             }
         }
     }
