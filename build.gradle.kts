@@ -19,7 +19,8 @@ repositories {
 kotlin {
     listOf(
         mingwX64(),
-        linuxX64()
+        linuxX64(),
+        linuxArm64()
     ).forEach {
         it.apply {
             binaries {
